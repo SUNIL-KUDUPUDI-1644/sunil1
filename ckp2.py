@@ -1,21 +1,22 @@
 q=int(input("enter the number"))
+n1=q
 s=[]
 t=[]
 y=[]
-for i in range(0,10):
-        k=q%10
-        if(k==0):
+for i in range(0,10000000000):
+        k=n1%10
+        if(k==0 and n1==0):
             break
         s.append(k)
-        q=int(q/10)
+        n1=int(n1/10)
 e=len(s)
 print(e)
 print(s)
 r=int(input("enter digits to remove"))
 for j in range(0,r):
     print("element to remove")
-    k=int(input("enter the no."))
-    t.append(k)
+    n2=int(input("enter the no."))
+    t.append(n2)
 print(t)
 y=list(set(s)-set(t))
 print(y)
