@@ -1,16 +1,17 @@
-n=int(input("enter the no. n"))
-q=int(input("enter the no. q"))
+n,q=input().split()
+n=int(n)
+q=int(q)
 s=[]
 g=[]
 h=[]
 t=[]
-for i in range(0,n):
-    s.append(int(input("enter numbers")))
-print(s)
+a=input()
+s.extend([int(x) for x in a.split()])
 for j in range(0,q):
-    u=int(input("enter u"))
+    u,v=input().split()
+    u=int(u)
+    v=int(v)
     g.append(u)
-    v=int(input("enter v"))
     h.append(v)
 for k in range(0,q):
     t=s[(g[k]-1):(h[k]+1)]
