@@ -15,7 +15,7 @@ for j in range(0,q):
     h.append(v)
 for k in range(0,q):
     t=s[(g[k]-1):(h[k])]
-    num=0
+    h=0
     for l in range(0,len(t)):
-        num=num^t[l]
-    print(num)
+        h=h^t[l]
+    print(h)
