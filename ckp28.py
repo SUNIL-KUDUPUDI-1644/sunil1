@@ -1,4 +1,4 @@
-a=int(input("enter the no."))
+a=int(input())
 c=int(a/2)
 for g in range(1):
     for b in range(a,c,-1):
