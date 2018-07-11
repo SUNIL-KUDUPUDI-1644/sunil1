@@ -1,7 +1,7 @@
 w,e=input().split()
 w=int(w)
 e=int(e)
-if(w>e):    
+if(w>=e):    
     s=[]
     q=[]
     a=[]
