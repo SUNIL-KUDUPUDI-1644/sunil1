@@ -1,8 +1,14 @@
-a=int(input())
-k=0
-s=[]
+s=int(input())
+a=[]
 b=input()
-s.extend([int(x) for x in b.split()])
-for z in range(0,len(s)):
-    k=k+s[z]
-print(k)
+a.extend([int(x) for x in b.split()])
+maxi=0
+z=0
+for i in range(0,len(a)):
+        z= z+a[i]
+        if (maxi<z):
+            maxi=z
+        if z< 0:
+            z=0 
+print(maxi)
+    
