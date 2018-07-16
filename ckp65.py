@@ -10,6 +10,6 @@ for i in range(0,len(s)):
     a=a+s[i]
 x=((a//2)-(s[b]//2))
 if(x==l):
-    print("Bon Apptit")
+    print("Bon Appetit")
 else:
     print(l-x)
