@@ -13,11 +13,9 @@ for i in range(1,(len(s))):
     for j in range(0,len(b)):
         n1=n1+b[j]
     n1=n1/(len(b))
-    print(n1)
     for k in range(0,len(c)):
         n2=n2+c[k]
     n2=n2/(len(c))
-    print(n2)
     if(n1==n2):
         n3=n3+1
 if(n3>=1):
