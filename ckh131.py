@@ -22,5 +22,10 @@ for l in range(len(s)):
         k.append(s[l])
         if(p-l==1):
             break;
-        
-print(k)
+n2=[]
+for n1 in range(0,len(k)):
+         n2.append(str(k[n1])+" ")
+n3=""
+for n4 in n2:
+    n3+=n4
+print(n3[:(len(n3)-1)])       
