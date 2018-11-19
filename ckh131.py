@@ -1,4 +1,5 @@
 s=[]
+z=int(input())
 b=input()
 s.extend([int(x) for x in b.split()])
 for i in range(0,len(s)):
