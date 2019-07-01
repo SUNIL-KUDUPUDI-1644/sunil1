@@ -1,37 +1,36 @@
-package lab10;
-
-	import java.io.*;
-
-	public class Exercise1 implements Runnable{
-	    public void run() {
-	        FileReader f = null;
-	        FileWriter f1 = null;
-	        BufferedReader br = null;
-	        BufferedWriter bw = null;
-	        
-	        String line = "";
-	        try {
-	            f = new FileReader("source.txt");
-	            f1 =new FileWriter("‪C:\\Users\\srsathi\\Desktop\\ex1\\ex1.txt", true);
-	            br = new BufferedReader(f);
-	            bw = new BufferedWriter(f1);
-	            line = br.readLine();
-	            
-	            while(line != null) {
-	                System.out.println(line);
-	                bw.write(line.toString());
-	                bw.flush();
-	                line = br.readLine();
-	            }
-	            f1.close();
-	        }
-	        catch(Exception e) {
-	            System.out.println(e);
-	        }
-	    }
-	    public static void main(String[] args) {
-	        Exercise1 obj = new Exercise1();
-	        Thread th = new Thread(obj);
-	        th.start();
-	    }
+import java.util.*;
+	public class Exercise1 {
+	    List<Integer> getvalues(HashMap<Integer, String> h) {
+	    Set<Integer> s=h.keySet();
+	    List<Integer> l=new ArrayList<Integer>(s);
+	    Collections.sort(l);
+	    return l;
 	}
+	public static void main(String args[]) {
+	    HashMap<Integer, String> h = new HashMap<Integer, String>();
+	    h.put(1,"hello");
+	    h.put(29,"bharu");
+	    h.put(3,"h r u");
+	    Exercise1 hm = new Exercise1();
+	    List<Integer> l1 = hm.getvalues(h);
+	    System.out.println(l1);
+	    System.out.println(h);
+	}
+
+	 
+
+	 
+
+	 
+
+	 
+
+	 
+
+	 
+
+	 
+
+	}
+
+
